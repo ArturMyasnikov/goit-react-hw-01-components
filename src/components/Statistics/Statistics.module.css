@@ -1,0 +1,21 @@
+.stats {
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+.statistics {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.itemStat {
+  align-items: center;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
