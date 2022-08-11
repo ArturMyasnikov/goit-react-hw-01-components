@@ -23,10 +23,14 @@ function Friends({ friends }) {
 }
 
 Friends.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
-  isOnline: PropTypes.bool.isRequired,
-  name: PropTypes.string.isRequired,
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ),
 };
 
 export default Friends;
